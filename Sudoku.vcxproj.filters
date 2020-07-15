@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{d8e86040-5933-49c5-94f6-93aef4a91b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helper functions">
+      <UniqueIdentifier>{4391fe69-9372-4f65-a33d-bcfa03e16061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Info files">
+      <UniqueIdentifier>{d0335dfd-b565-42dd-9bff-1ab5645d967f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main functions">
+      <UniqueIdentifier>{b4c17cae-270c-45b8-adca-4a99fdd44bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helper functions">
+      <UniqueIdentifier>{3efbe563-2acf-4144-b798-25e510d404fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects">
+      <UniqueIdentifier>{381ebd35-07eb-4e8d-9d70-07e35302e6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{3fc2b677-ff3b-454d-b80e-d92bf743f953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Actors">
+      <UniqueIdentifier>{abb64f66-ff57-4c50-95da-0898488862db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Actors\Enemies">
+      <UniqueIdentifier>{18ae59b9-f2e9-4c7d-9730-383eedee3372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Abstract Classes">
+      <UniqueIdentifier>{3c702b6c-dfc0-4a84-a709-a3cec6e81fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Collectables">
+      <UniqueIdentifier>{cfd1a239-2acc-414c-ba7e-9ccd8656ce68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Projectiles">
+      <UniqueIdentifier>{dba89917-ce9a-4950-b224-4e342da8971e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Weapons">
+      <UniqueIdentifier>{195bb95d-fed3-452f-80e4-eb80410bc690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Screens">
+      <UniqueIdentifier>{7729b515-0847-4ed1-ae1c-a3243a193452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Abstract classes">
+      <UniqueIdentifier>{217f6280-93a9-4294-819d-c08e60b834fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Actors">
+      <UniqueIdentifier>{4e30b80e-e794-4ff7-86f9-4be5cd940310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Actors\Enemies">
+      <UniqueIdentifier>{32d9cb04-691d-431f-8232-744603ac1b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Collectables">
+      <UniqueIdentifier>{84cf7b61-8421-49f3-8bad-6543dbd89383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Projectiles">
+      <UniqueIdentifier>{ddc55d53-bbcd-4acc-b397-029dae255be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Weapons">
+      <UniqueIdentifier>{cf9dd7e6-bc7a-4dfa-a188-bf96baf84553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Screens">
+      <UniqueIdentifier>{2e13a969-9223-410e-8b5a-e41fbcc8cff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Info files">
+      <UniqueIdentifier>{88085d03-cda4-4934-b971-30a0cd781fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Components">
+      <UniqueIdentifier>{e2ae980b-a25c-4628-b79a-681e77e6ec0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Components">
+      <UniqueIdentifier>{07733d65-bd41-4fc2-aac0-647ddf3469bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Components\Board">
+      <UniqueIdentifier>{5d47eceb-e578-4a0a-b099-6e3b8ce09372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Components\Board">
+      <UniqueIdentifier>{904c2fdb-07c6-4a5f-a8b4-0e9b1d214969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Singleton classes">
+      <UniqueIdentifier>{11c447f4-540a-43f0-bcf3-5eda2588b80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Singleton classes">
+      <UniqueIdentifier>{754b4fcd-087a-4f21-8bac-14e06e3bb9e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Weapons\Throwables">
+      <UniqueIdentifier>{66e532b2-3390-45d5-93c7-5ca1f97b3abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Weapons\Throwables">
+      <UniqueIdentifier>{5c85e627-b176-474c-9f9c-b6245e62edc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Weapons\Shooters">
+      <UniqueIdentifier>{47160641-7f7f-45f8-b564-82975e7541c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Weapons\Shooters">
+      <UniqueIdentifier>{9550512a-c60d-4926-9280-78928f776913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects\Screen Components">
+      <UniqueIdentifier>{f007889e-04fa-473f-963e-e5a9e665a106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects\Screen Components">
+      <UniqueIdentifier>{daa2a7c0-fe49-4b6a-9226-f1a36f22508e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Arrow.cpp">
+      <Filter>Source Files\Objects\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files\Objects\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Flame.cpp">
+      <Filter>Source Files\Objects\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthPack.cpp">
+      <Filter>Source Files\Objects\Collectables</Filter>
+    </ClCompile>
+    <ClCompile Include="HighscoresScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="NewGameScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="QuitScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Rocket.cpp">
+      <Filter>Source Files\Objects\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Pellet.cpp">
+      <Filter>Source Files\Objects\Projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Objects\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files\Game Components\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files\Game Components\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="TutorialScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelEndScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Collectable.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Movable.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="NameEntryScreen.cpp">
+      <Filter>Source Files\Objects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManagement.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SavedDataManagement.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\Objects\Screen Components</Filter>
+    </ClCompile>
+    <ClCompile Include="PageViewer.cpp">
+      <Filter>Source Files\Objects\Screen Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Wanderer.cpp">
+      <Filter>Source Files\Objects\Actors\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstructer.cpp">
+      <Filter>Source Files\Objects\Actors\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Main functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>Source Files\Main functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Update.cpp">
+      <Filter>Source Files\Main functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Direction.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="FileCheck.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathematics.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Gate.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Highscore_info.cpp">
+      <Filter>Source Files\Info files</Filter>
+    </ClCompile>
+    <ClCompile Include="SavedData_info.cpp">
+      <Filter>Source Files\Info files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextPrinting.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="StringManipulation.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBar.cpp">
+      <Filter>Source Files\Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Singleton classes</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundHolder.cpp">
+      <Filter>Source Files\Singleton classes</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureHolder.cpp">
+      <Filter>Source Files\Singleton classes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameplayControls.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenControls.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Level_info.cpp">
+      <Filter>Source Files\Info files</Filter>
+    </ClCompile>
+    <ClCompile Include="Difficulty_info.cpp">
+      <Filter>Source Files\Info files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileManagement.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManagement.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManagement.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Scores_info.cpp">
+      <Filter>Source Files\Info files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorLogging.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Throwable.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Grenade.cpp">
+      <Filter>Source Files\Objects\Weapons\Throwables</Filter>
+    </ClCompile>
+    <ClCompile Include="Hatchet.cpp">
+      <Filter>Source Files\Objects\Weapons\Throwables</Filter>
+    </ClCompile>
+    <ClCompile Include="Bow.cpp">
+      <Filter>Source Files\Objects\Weapons\Shooters</Filter>
+    </ClCompile>
+    <ClCompile Include="Flamethrower.cpp">
+      <Filter>Source Files\Objects\Weapons\Shooters</Filter>
+    </ClCompile>
+    <ClCompile Include="Pistol.cpp">
+      <Filter>Source Files\Objects\Weapons\Shooters</Filter>
+    </ClCompile>
+    <ClCompile Include="RocketLauncher.cpp">
+      <Filter>Source Files\Objects\Weapons\Shooters</Filter>
+    </ClCompile>
+    <ClCompile Include="Shotgun.cpp">
+      <Filter>Source Files\Objects\Weapons\Shooters</Filter>
+    </ClCompile>
+    <ClCompile Include="Shooter.cpp">
+      <Filter>Source Files\Objects\Abstract Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="FireBottle.cpp">
+      <Filter>Source Files\Objects\Weapons\Throwables</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile_info.cpp">
+      <Filter>Source Files\Info files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManipulation.cpp">
+      <Filter>Source Files\Helper functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawn_info.cpp">
+      <Filter>Source Files\Info files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HighscoresScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="NewGameScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="QuitScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Arrow.h">
+      <Filter>Header Files\Objects\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files\Objects\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Flame.h">
+      <Filter>Header Files\Objects\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Rocket.h">
+      <Filter>Header Files\Objects\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Pellet.h">
+      <Filter>Header Files\Objects\Projectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Objects\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Header Files\Game Components\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Header Files\Game Components\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="TutorialScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthPack.h">
+      <Filter>Header Files\Objects\Collectables</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelEndScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Movable.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Collectable.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="NameEntryScreen.h">
+      <Filter>Header Files\Objects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="PageViewer.h">
+      <Filter>Header Files\Objects\Screen Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files\Objects\Screen Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Direction.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathematics.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCheck.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Wanderer.h">
+      <Filter>Header Files\Objects\Actors\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstructer.h">
+      <Filter>Header Files\Objects\Actors\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Window_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Walls_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Highscore_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Difficulty_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gate.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SavedData_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextCharacters.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="TextPrinting.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="StringManipulation.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthBar.h">
+      <Filter>Header Files\Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Singleton classes</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundHolder.h">
+      <Filter>Header Files\Singleton classes</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureHolder.h">
+      <Filter>Header Files\Singleton classes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameplayControls.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenControls.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Scores_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorLogging.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="SizeStatus.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapons_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="Throwable.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Grenade.h">
+      <Filter>Header Files\Objects\Weapons\Throwables</Filter>
+    </ClInclude>
+    <ClInclude Include="Hatchet.h">
+      <Filter>Header Files\Objects\Weapons\Throwables</Filter>
+    </ClInclude>
+    <ClInclude Include="Bow.h">
+      <Filter>Header Files\Objects\Weapons\Shooters</Filter>
+    </ClInclude>
+    <ClInclude Include="Flamethrower.h">
+      <Filter>Header Files\Objects\Weapons\Shooters</Filter>
+    </ClInclude>
+    <ClInclude Include="Pistol.h">
+      <Filter>Header Files\Objects\Weapons\Shooters</Filter>
+    </ClInclude>
+    <ClInclude Include="RocketLauncher.h">
+      <Filter>Header Files\Objects\Weapons\Shooters</Filter>
+    </ClInclude>
+    <ClInclude Include="Shotgun.h">
+      <Filter>Header Files\Objects\Weapons\Shooters</Filter>
+    </ClInclude>
+    <ClInclude Include="Shooter.h">
+      <Filter>Header Files\Objects\Abstract classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+    <ClInclude Include="FireBottle.h">
+      <Filter>Header Files\Objects\Weapons\Throwables</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManipulation.h">
+      <Filter>Header Files\Helper functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawn_info.h">
+      <Filter>Header Files\Info files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
