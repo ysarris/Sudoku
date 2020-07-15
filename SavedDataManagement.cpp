@@ -107,7 +107,7 @@ void Game::LoadHighscores()
 // Only called when a new highscore is guaranteed to be entered (list not full or score is higher than the last one)
 void Game::SaveNewHighscore(std::string name)
 {
-	auto savedScores = m_Highscores.size();
+	auto savedScores = static_cast<int>(m_Highscores.size());
 
 	// Exceeded max ?
 	if (m_TotalScore > GetMaxScorePossible()) { m_TotalScore = GetMaxScorePossible(); }
@@ -146,19 +146,19 @@ void Game::SaveNewHighscore(std::string name)
 		}
 
 		// Remove lowest highscore when max exceeded
-		if (m_Highscores.size() > MAX_HIGHSCORES_STORED)
+		if (static_cast<int>(m_Highscores.size()) > MAX_HIGHSCORES_STORED)
 			m_Highscores.pop_back();
 	}
 
 	// Create string containing all highscores
 	std::string highscores_string;
-	for (unsigned int i = 0; i < m_Highscores.size(); i++)
+	for (unsigned int i = 0; i < static_cast<int>(m_Highscores.size()); i++)
 	{
 		highscores_string.append(m_Highscores.at(i).first).push_back(SPACE_CHAR);
 		highscores_string.append(std::to_string(m_Highscores.at(i).second));
 
 		// Dont add new line after last score
-		if (i != m_Highscores.size() - 1) { highscores_string.append(NEWLINE); }
+		if (i != static_cast<int>(m_Highscores.size()) - 1) { highscores_string.append(NEWLINE); }
 	}
 
 	// Replace file contents with string

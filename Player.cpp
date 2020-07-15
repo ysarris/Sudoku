@@ -35,7 +35,7 @@ static int ChooseRandomNewWeapon(std::string ownedWeapons)
 	}
 	ss.clear();
 
-	auto newWeaponsLeft = newWeaponIDs.size();
+	auto newWeaponsLeft = static_cast<int>(newWeaponIDs.size());
 
 	// Any weapons left to unlock ?
 	if (newWeaponsLeft > 0) { return TakeRandomElementFromSet(newWeaponIDs); }
@@ -81,12 +81,12 @@ void Player::ResetNewLevel()
 void Player::SwapWeapon()
 {
 	// Must have more than 1 weapon to swap
-	if (m_Weapons.size() > 1)
+	if (static_cast<int>(m_Weapons.size()) > 1)
 	{
 		GetEquippedWeapon()->StopUsing();
 
 		// Equip next weapon, loop back to start if end reached
-		m_EquippedWeaponIndex = ++m_EquippedWeaponIndex % m_Weapons.size();
+		m_EquippedWeaponIndex = ++m_EquippedWeaponIndex % static_cast<int>(m_Weapons.size());
 
 		// Move newly equipped weapon to player's position
 		GetEquippedWeapon()->Hold(GetFacing(), GetPos());
@@ -128,7 +128,7 @@ void Player::AddNewWeapon(const int ID)
 		break;
 	}
 	// Equip the new weapon
-	m_EquippedWeaponIndex = m_Weapons.size() - 1;
+	m_EquippedWeaponIndex = static_cast<int>(m_Weapons.size()) - 1;
 }
 
 void Player::AddRandomNewWeapon()

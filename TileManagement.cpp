@@ -59,9 +59,9 @@ static Direction WhichWall(int column, int row)
 
 void Game::CreateGates()
 {
-	for (int column = 0; column < WINDOW_WIDTH_TILES; column++)
+	for (unsigned int column = 0; column < WINDOW_WIDTH_TILES; column++)
 	{
-		for (int row = 0; row < WINDOW_HEIGHT_TILES; row++)
+		for (unsigned int row = 0; row < WINDOW_HEIGHT_TILES; row++)
 		{
 			// Only wall tiles can be a gate
 			auto wall = WhichWall(column, row);
@@ -90,9 +90,9 @@ void Game::SetTVAfromTLA()
 	// Start from first vertex in array
 	int curVertex = 0;
 
-	for (int column = 0; column < WINDOW_WIDTH_TILES; column++)
+	for (unsigned int column = 0; column < WINDOW_WIDTH_TILES; column++)
 	{
-		for (int row = 0; row < WINDOW_HEIGHT_TILES; row++)
+		for (unsigned int row = 0; row < WINDOW_HEIGHT_TILES; row++)
 		{
 			auto posX = static_cast<float>(column);
 			auto posY = static_cast<float>(row);

@@ -73,5 +73,5 @@ bool Cell::IsHidden() const
 
 bool Cell::RanOutOfCandidates() const
 {
-	return m_Candidates.size() == 0;
+	return static_cast<int>(m_Candidates.size()) == 0;
 }

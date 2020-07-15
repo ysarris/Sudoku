@@ -55,7 +55,7 @@ void Screen::Draw(sf::RenderWindow& rWindow) const
 	Object::Draw(rWindow);
 
 	// Dont print empty title
-	if (m_Title.size() != 0)
+	if (static_cast<int>(m_Title.size()) != 0)
 		PrintText(rWindow, sf::Vector2f(CENTER_ALIGNMENT, m_TitleVerticalAlignment), m_Title, TITLE_TEXT_SIZE,
 			DEFAULT_TEXT_COLOR, DEFAULT_TEXT_OUTLINE_COLOR, TITLE_TEXT_OUTLINE_SIZE);
 

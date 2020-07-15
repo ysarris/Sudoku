@@ -91,12 +91,12 @@ void LevelEndScreen::Draw(sf::RenderWindow& rWindow) const
 	Screen::Draw(rWindow);
 
 	// Completed ?
-	if (m_ScoreBreakdown.size() != 0)
+	if (static_cast<int>(m_ScoreBreakdown.size()) != 0)
 	{
 		auto breakdownVerticalAlignment = LES_BREAKDOWN_DEFAULT_VERTICAL_ALIGNMENT;
 
 		// Final level ?
-		if (m_GameCompleteMessage.size() != 0)
+		if (static_cast<int>(m_GameCompleteMessage.size()) != 0)
 		{
 			// Move breakdown higher so it doesnt overlap with message
 			breakdownVerticalAlignment = LES_BREAKDOWN_WITH_SPECIAL_MSG_VERTICAL_ALIGNMENT;
@@ -104,7 +104,7 @@ void LevelEndScreen::Draw(sf::RenderWindow& rWindow) const
 				LES_SPECIAL_MSG_TEXT_SIZE, LES_SPECIAL_MSG_COLOR, LES_SPECIAL_MSG_OUTLINE_COLOR, LES_SPECIAL_MSG_OUTLINE_SIZE, LES_FONT_STYLE);
 		}
 		// Unlocked new weapon ?
-		else if (m_NewWeaponMessage.size() != 0)
+		else if (static_cast<int>(m_NewWeaponMessage.size()) != 0)
 		{
 			// Move breakdown higher so it doesnt overlap with message
 			breakdownVerticalAlignment = LES_BREAKDOWN_WITH_SPECIAL_MSG_VERTICAL_ALIGNMENT;

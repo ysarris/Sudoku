@@ -57,13 +57,13 @@ void NameEntryScreen::HandleEventInput(sf::Event event)
 			m_InputTimer.Reset(NES_INPUT_DELAY);
 
 			// Only accept alphabetic characters and stay within max name length
-			if (IsAlphabetLetter(event.text.unicode) && m_Name.size() < NAME_MAX_WIDTH)
+			if (IsAlphabetLetter(event.text.unicode) && static_cast<int>(m_Name.size()) < NAME_MAX_WIDTH)
 			{
 				m_Name += static_cast<char>(event.text.unicode);
 				PlaySound(NES_READ_FILENAME);
 			}
 			// Play error sound unless character is the carriage return and name is not empty
-			else if (event.text.unicode != CODE_CARRIAGE_RETURN || m_Name.size() == 0)
+			else if (event.text.unicode != CODE_CARRIAGE_RETURN || static_cast<int>(m_Name.size()) == 0)
 				PlaySound(NES_WARNING_FILENAME);
 		}
 
@@ -72,7 +72,7 @@ void NameEntryScreen::HandleEventInput(sf::Event event)
 		{
 			m_InputTimer.Reset(NES_INPUT_DELAY);
 
-			if (m_Name.size() > 0)
+			if (static_cast<int>(m_Name.size()) > 0)
 			{
 				m_Name.pop_back();
 				PlaySound(NES_DELETE_FILENAME);
@@ -89,13 +89,13 @@ void NameEntryScreen::Draw(sf::RenderWindow& rWindow) const
 	Screen::Draw(rWindow);
 	
 	// Any letters entered ?
-	if (m_Name.size() > 0)
+	if (static_cast<int>(m_Name.size()) > 0)
 	{
 		PrintText(rWindow, sf::Vector2f(CENTER_ALIGNMENT, CENTER_ALIGNMENT),
 			m_Name, NES_NAME_TEXT_SIZE, DEFAULT_TEXT_COLOR, NES_NAME_FONT_STYLE, NES_NAME_TEXT_STYLE);
 
 		// Max warning
-		if (m_Name.size() == NAME_MAX_WIDTH)
+		if (static_cast<int>(m_Name.size()) == NAME_MAX_WIDTH)
 			PrintText(rWindow, sf::Vector2f(CENTER_ALIGNMENT, NES_WARNING_TEXT_VERTICAL_ALIGNMENT),
 				NES_WARNING_TEXT_MAX, NES_WARNING_TEXT_SIZE, NES_WARNING_TEXT_COLOR);
 	}
@@ -115,9 +115,9 @@ void NameEntryScreen::Update(float dtAsSeconds)
 	// Name entry screen updates
 	if (!m_InputTimer.RanOut()) { m_InputTimer.Decrement(dtAsSeconds); }
 	// Clear menu if name just became empty
-	if (m_Name.size() == 0 && !m_Menu->IsEmpty()) { m_Menu->ClearAllOptions(); }
+	if (static_cast<int>(m_Name.size()) == 0 && !m_Menu->IsEmpty()) { m_Menu->ClearAllOptions(); }
 	// Add menu option if name just stopped being empty
-	else if (m_Name.size() > 0 && m_Menu->IsEmpty()) { m_Menu->AddOption("DONE", ScreenID::HIGHSCORES); }
+	else if (static_cast<int>(m_Name.size()) > 0 && m_Menu->IsEmpty()) { m_Menu->AddOption("DONE", ScreenID::HIGHSCORES); }
 }
 
 const std::string NameEntryScreen::GetClassName() const

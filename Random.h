@@ -16,7 +16,7 @@ inline T TakeRandomElementFromSet(std::set<T>& set)
 {
 	// Advance iterator to random position in set
 	auto iterator = set.begin();
-	advance(iterator, GetRandomNumberBetween(0, set.size() - 1));
+	advance(iterator, GetRandomNumberBetween(0, static_cast<int>(set.size()) - 1));
 
 	// Dereference iterator for element
 	auto element = *iterator;

@@ -36,15 +36,15 @@ ScreenID Menu::GetSelectedDestination() const
 
 bool Menu::IsEmpty() const
 {
-	return m_Options.size() == 0;
+	return static_cast<int>(m_Options.size()) == 0;
 }
 
 void Menu::NextOption()
 {
 	// Must have more than 1 option to navigate
-	if (m_Options.size() > 1 && m_NavigationTimer.RanOut())
+	if (static_cast<int>(m_Options.size()) > 1 && m_NavigationTimer.RanOut())
 	{
-		m_SelectedIndex = ++m_SelectedIndex % m_Options.size();
+		m_SelectedIndex = ++m_SelectedIndex % static_cast<int>(m_Options.size());
 		SwitchOption();
 	}
 }
@@ -52,9 +52,9 @@ void Menu::NextOption()
 void Menu::PreviousOption()
 {
 	// Must have more than 1 option to navigate
-	if (m_Options.size() > 1 && m_NavigationTimer.RanOut())
+	if (static_cast<int>(m_Options.size()) > 1 && m_NavigationTimer.RanOut())
 	{
-		m_SelectedIndex = (--m_SelectedIndex < 0) ? (m_Options.size() - 1) : m_SelectedIndex;
+		m_SelectedIndex = (--m_SelectedIndex < 0) ? (static_cast<int>(m_Options.size()) - 1) : m_SelectedIndex;
 		SwitchOption();
 	}
 }
@@ -67,7 +67,7 @@ void Menu::ClearAllOptions()
 void Menu::Update(float dtAsSeconds)
 {
 	// Must have more than 1 option to navigate
-	if (m_Options.size() > 1 && !m_NavigationTimer.RanOut()) { m_NavigationTimer.Decrement(dtAsSeconds); }
+	if (static_cast<int>(m_Options.size()) > 1 && !m_NavigationTimer.RanOut()) { m_NavigationTimer.Decrement(dtAsSeconds); }
 	UpdateSelectedTextSize(dtAsSeconds);
 }
 

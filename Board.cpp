@@ -96,7 +96,7 @@ void Board::HideCells(int amountToHide)
 	int index;
 	// Populate a set with all indeces
 	std::set<int> indeces;
-	for (auto i = 0; i < static_cast<int>(m_SudokuCells.size() - 1); i++) { indeces.insert(i); }
+	for (auto i = 0; i < static_cast<int>(m_SudokuCells.size()) - 1; i++) { indeces.insert(i); }
 
 	// Hidden enough cells yet ?
 	while (hiddenSoFar < amountToHide)
@@ -184,7 +184,7 @@ int Board::GetRandomIncorrectCellIndex() const
 	int index;
 	// Populate a set with all indeces
 	std::set<int> indeces;
-	for (auto i = 0; i < static_cast<int>(m_SudokuCells.size() - 1); i++) { indeces.insert(i); }
+	for (auto i = 0; i < static_cast<int>(m_SudokuCells.size()) - 1; i++) { indeces.insert(i); }
 	
 	do
 	{

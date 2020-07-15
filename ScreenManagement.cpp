@@ -19,7 +19,7 @@ static constexpr auto SELECT_SOUND_FILENAME = "select";
 
 static bool IsNewHighscore(int scoreToCheck, std::vector <std::pair<std::string, int>>& rHighscores)
 {
-	return (rHighscores.size() < MAX_HIGHSCORES_STORED) || (scoreToCheck > rHighscores.back().second);
+	return (static_cast<int>(rHighscores.size()) < MAX_HIGHSCORES_STORED) || (scoreToCheck > rHighscores.back().second);
 }
 
 void Game::SwitchScreen(ScreenID newScreenID)
