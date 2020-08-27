@@ -19,7 +19,7 @@ public:
 	virtual void Update(float dtAsSeconds) final override;
 
 private:
-	int& msp_Difficulty;
+	int& mr_Difficulty;
 	int& mr_Level;
 	Timer& mr_TimeRemaining;
 	Board& mr_Board;

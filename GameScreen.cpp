@@ -37,7 +37,7 @@ static void PrintHUDText(sf::RenderWindow& rWindow, sf::Vector2f alignment, std:
 }
 
 GameScreen::GameScreen(int& rDifficulty, int& rLevel, Timer& rTimeRemaining, Board& rSudokuBoard, Player& rPlayer, int& rKillsScore, int& rHighlightedCellIndex) :
-	msp_Difficulty(rDifficulty),
+	mr_Difficulty(rDifficulty),
 	mr_Level(rLevel),
 	mr_TimeRemaining(rTimeRemaining),
 	mr_Board(rSudokuBoard),
@@ -158,7 +158,7 @@ void GameScreen::Update(float dtAsSeconds)
 	m_HealthBar.Update(mr_Player.GetHealth(), mr_Player.GetMaxHealth());
 
 	// Level & Difficulty
-	m_LevelDifficultyText = std::string(HUD_LEVEL_TEXT).append(std::to_string(mr_Level)).append(HUD_LEVEL_DIFFICULTY_SEPERATOR).append(GetDifficultyString(msp_Difficulty));
+	m_LevelDifficultyText = std::string(HUD_LEVEL_TEXT).append(std::to_string(mr_Level)).append(HUD_LEVEL_DIFFICULTY_SEPERATOR).append(GetDifficultyString(mr_Difficulty));
 
 	// Time
 	auto minutes = FillWithCharacters(std::to_string(GetMinutes(mr_TimeRemaining.GetTimeLeft())), ZERO_CHAR, FillType::LEADING, HUD_TIME_FORMAT_WIDTH);
