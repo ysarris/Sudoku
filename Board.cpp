@@ -177,7 +177,7 @@ int Board::CalcColumn(int index) const
 	return withinBoxColumn + additionalColumns;
 }
 
-// Cells with wrong a guess and empty cells are considered incorrect
+// Cells with a wrong guess and empty cells are considered incorrect
 int Board::GetRandomIncorrectCellIndex() const
 {
 	Assert(ERROR_NO_INCORRECT_CELLS, !IsSolutionCorrect());
